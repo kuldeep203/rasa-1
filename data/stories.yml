@@ -1,0 +1,1765 @@
+version: "2.0"
+stories:
+  - story: story_1_choosing_system
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: speedUpMachine
+      - action: utter_speedUpMachine
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+
+
+  - story: story_3_User_facing_system_speed_sad_path
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: speedUpMachine
+      - action: utter_speedUpMachine
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      #- action: action_ticket_creation_speed_up_ticket_creation
+      - action: utter_thanks
+      - action: action_restart
+
+
+  - story: story_7_User_facing_speed_up_machine_super_sad_path
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: speedUpMachine
+      - action: utter_speedUpMachine
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_1_choosing_system_set_time_zone_to_india_standard_time
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: setTimeZoneToIndiaStandardTime
+      - action: utter_setTimeToIST
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_2_User_facing_system_set_time_zone_to_india_standard_time
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: setTimeZoneToIndiaStandardTime
+      - action: utter_setTimeToIST
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_set_time_to_IST_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_3_User_facing_set_time_zone_to_india_standard_time
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: oracleNotWorking
+      - action: utter_oracleNotWorking
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+  - story: story_1_choosing_system_resolveBlueDumpError
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: resolveBlueDumpError
+      - action: utter_blueDumpError
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_2_User_facing_system_resolveBlueDumpError
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: resolveBlueDumpError
+      - action: utter_blueDumpError
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_resolve_blue_dump_error_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_3_User_facing_resolveBlueDumpError
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: resolveBlueDumpError
+      - action: utter_blueDumpError
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+  - story: story_1_choosing_system_DisableJAVAAutoUpdate
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: javaupdate
+      - action: utter_javaUpdate
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_2_User_facing_system_DisableJAVAAutoUpdate
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: javaupdate
+      - action: utter_javaUpdate
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_resolve_disable_java_update_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_3_User_facing_DisableJAVAAutoUpdate
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: javaupdate
+      - action: utter_javaUpdate
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_1_choosing_system_windowIssueDueToUpdate
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: windowIssueDueToUpdate
+      - action: utter_windowUpdateIssue
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_windowIssueDueToUpdate
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: windowIssueDueToUpdate
+      - action: utter_windowUpdateIssue
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_window_update_issue_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_windowIssueDueToUpdate
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: windowIssueDueToUpdate
+      - action: utter_windowUpdateIssue
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+  - story: story_1_choosing_system_antiVirusIsNotWorking
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: antiVirusIsNotWorking
+      - action: utter_anti_virus_not_working
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_antiVirusIsNotWorking
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: antiVirusIsNotWorking
+      - action: utter_anti_virus_not_working
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_antivirus_not_working_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_antiVirusIsNotWorking
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: antiVirusIsNotWorking
+      - action: utter_anti_virus_not_working
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_1_choosing_system_remoteDesktopConnectionTroubleShooter
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: remoteDesktopConnectionTroubleShooter
+      - action: utter_remote_connection_troubleshootter
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_remoteDesktopConnectionTroubleShooter
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: remoteDesktopConnectionTroubleShooter
+      - action: utter_remote_connection_troubleshootter
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_remote_connection_trouble_shooter_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_remoteDesktopConnectionTroubleShooter
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: remoteDesktopConnectionTroubleShooter
+      - action: utter_remote_connection_troubleshootter
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+  - story: story_1_choosing_system_backUpUserData
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: backUpUserData
+      - action: utter_back_up_user_data
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_backUpUserData
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: backUpUserData
+      - action: utter_back_up_user_data
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_backup_user_data_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_backUpUserData
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: backUpUserData
+      - action: utter_back_up_user_data
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+  - story: story_1_choosing_system_freeUpDiskSpace
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: freeUpDiskSpace
+      - action: utter_freeUpDiskSpace
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_freeUpDiskSpace
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: freeUpDiskSpace
+      - action: utter_freeUpDiskSpace
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_free_up_disk_space_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_freeUpDiskSpace
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: freeUpDiskSpace
+      - action: utter_freeUpDiskSpace
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+  - story: story_1_choosing_system_updateGroupPolicy
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: updateGroupPolicy
+      - action: utter_updateGroupPolicy
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_updateGroupPolicy
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: updateGroupPolicy
+      - action: utter_updateGroupPolicy
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_update_group_policy_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_updateGroupPolicy
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: updateGroupPolicy
+      - action: utter_updateGroupPolicy
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+  - story: story_1_choosing_system_sharedFolderForMapping
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: sharedFolderForMapping
+      - action: utter_sharedFolderForMapping
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_sharedFolderForMapping
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: sharedFolderForMapping
+      - action: utter_sharedFolderForMapping
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_share_folder_for_mapping_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_sharedFolderForMapping
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: sharedFolderForMapping
+      - action: utter_sharedFolderForMapping
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  - story: story_1_choosing_system_unableToOpenFile
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: unableToOpenFile
+      - action: utter_fileIsNotOpening
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_system_unableToOpenFile
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: unableToOpenFile
+      - action: utter_fileIsNotOpening
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_unable_to_open_file_ticket_create
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_unableToOpenFile
+    steps:
+      - intent: system
+      - action: action_subcategory_of_system_issues
+      - intent: unableToOpenFile
+      - action: utter_fileIsNotOpening
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+#
+#
+# chossing outlook and category of outlook_1
+
+  - story: story_1_choosing_outlook_outlookIsNotConnecting
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: outlookIsNotConnecting
+      - action: utter_outlookIsNotConnecting
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_outlookIsNotConnecting
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: outlookIsNotConnecting
+      - action: utter_outlookIsNotConnecting
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_outlook_is_not_connecting
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_outlookIsNotConnecting
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: outlookIsNotConnecting
+      - action: utter_outlookIsNotConnecting
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing outlook and category of outlook_2
+
+  - story: story_1_choosing_outlook_createNewPSTArchiveFile
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: createNewPSTArchiveFile
+      - action: utter_createNewPSTArchiveFile
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_createNewPSTArchiveFile
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: createNewPSTArchiveFile
+      - action: utter_createNewPSTArchiveFile
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_create_new_PST_archive_file
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_createNewPSTArchiveFile
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: createNewPSTArchiveFile
+      - action: utter_createNewPSTArchiveFile
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing outlook and category of outlook_3
+
+  - story: story_1_choosing_outlook_configureOutlook
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: configureOutlook
+      - action: utter_configureOutlook
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_configureOutlook
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: configureOutlook
+      - action: utter_configureOutlook
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_configure_outlook
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_configureOutlook
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: configureOutlook
+      - action: utter_configureOutlook
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing outlook and category of outlook_4
+
+  - story: story_1_choosing_outlook_knowYourPSTFileSize
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: knowYourPSTFileSize
+      - action: utter_knowYourPSTFileSize
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_knowYourPSTFileSize
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: knowYourPSTFileSize
+      - action: utter_knowYourPSTFileSize
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_pst_file_size
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_knowYourPSTFileSize
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: knowYourPSTFileSize
+      - action: utter_knowYourPSTFileSize
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+# chossing outlook and category of outlook_5
+
+  - story: story_1_choosing_outlook_openwebmail
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: openWebmail
+      - action: utter_openWebmail
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_openwebmail
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: openWebmail
+      - action: utter_openWebmail
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_open_web_mail
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_openwebmail
+    steps:
+      - intent: outlook
+      - action: action_subcategory_of_outlook_issues
+      - intent: openWebmail
+      - action: utter_openWebmail
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+# chosing connectivity and category of browser_1
+
+  - story: story_1_choosing_lanNotWorking
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: unableToOpenPDFInIE
+      - action: utter_unableToOpenPDFInIE
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_lanNotWorking
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: unableToOpenPDFInIE
+      - action: utter_unableToOpenPDFInIE
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_unable_to_open_PDF_in_IE
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_browser_unableToOpenPDFInIE
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: unableToOpenPDFInIE
+      - action: utter_unableToOpenPDFInIE
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  # choosing Browser and category of browser_2
+  - story: story_1_choosing_makeChromeYourDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: makeChromeYourDefaultBrowser
+      - action: utter_makeChromeYourDefaultBrowser_strictly
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_makeChromeYourDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: makeChromeYourDefaultBrowser
+      - action: utter_makeChromeYourDefaultBrowser_strictly
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_make_chrome_default_browser
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_makeChromeYourDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: makeChromeYourDefaultBrowser
+      - action: utter_makeChromeYourDefaultBrowser_strictly
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  # chosing Browser and category of browser_3
+  - story: story_1_choosing_setInternetExplorerDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: setInternetExplorerDefaultBrowser
+      - action: utter_setInternetExplorerDefaultBrowser
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_setInternetExplorerDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: setInternetExplorerDefaultBrowser
+      - action: utter_setInternetExplorerDefaultBrowser
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_internet_explorer
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_setInternetExplorerDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: setInternetExplorerDefaultBrowser
+      - action: utter_setInternetExplorerDefaultBrowser
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  # chosing Browser and category of browser_4
+  - story: story_1_choosing_makeEdgeYourDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: makeEdgeYourDefaultBrowser
+      - action: utter_makeEdgeYourDefaultBrowser
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_makeEdgeYourDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: makeEdgeYourDefaultBrowser
+      - action: utter_makeEdgeYourDefaultBrowser
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_Make_edge_your_Default_browser
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_makeEdgeYourDefaultBrowser
+    steps:
+      - intent: browser
+      - action: action_subcategory_of_browser_issues
+      - intent: makeEdgeYourDefaultBrowser
+      - action: utter_makeEdgeYourDefaultBrowser
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing connectivity and category of connectivity_1
+
+  - story: story_1_choosing_lanNotWorking
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: lanNotWorking
+      - action: utter_lanNotWorking
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_lanNotWorking
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: lanNotWorking
+      - action: utter_lanNotWorking
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_lan_not_working
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_lanNotWorking
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: lanNotWorking
+      - action: utter_lanNotWorking
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing connectivity and category of connectivity_2
+
+  - story: story_1_choosing_unableToConnectToWi-Fi
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: unableToConnectToWi-Fi
+      - action: utter_unableToConnectToWi-Fi
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_unableToConnectToWi-Fi
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: unableToConnectToWi-Fi
+      - action: utter_unableToConnectToWi-Fi
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_unable_to_Connect_to_Wi-Fi
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_unableToConnectToWi-Fi
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: unableToConnectToWi-Fi
+      - action: utter_unableToConnectToWi-Fi
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing connectivity and category of connectivity_3
+
+  - story: story_1_choosing_modifyTheHostsFileOnYourMachine
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: modifyTheHostsFileOnYourMachine
+      - action: utter_modifyTheHostsFileOnYourMachine
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_modifyTheHostsFileOnYourMachine
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: modifyTheHostsFileOnYourMachine
+      - action: utter_modifyTheHostsFileOnYourMachine
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_modify_the_hosts_file_on_your_machine
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_modifyTheHostsFileOnYourMachine
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: modifyTheHostsFileOnYourMachine
+      - action: utter_modifyTheHostsFileOnYourMachine
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing connectivity and category of connectivity_4
+
+  - story: story_1_choosing_internetLANLimitedIssue
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: internetLANLimitedIssue
+      - action: utter_internetLANLimitedIssue
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_internetLANLimitedIssue
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: internetLANLimitedIssue
+      - action: utter_internetLANLimitedIssue
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_internetLANLimitedIssue
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_internetLANLimitedIssue
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: internetLANLimitedIssue
+      - action: utter_internetLANLimitedIssue
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+# chossing connectivity and category of connectivity_5
+
+  - story: story_1_choosing_checkInternetWorkingOrNot
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: checkInternetWorkingOrNot
+      - action: utter_checkInternetWorkingOrNot
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_checkInternetWorkingOrNot
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: checkInternetWorkingOrNot
+      - action: utter_checkInternetWorkingOrNot
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_checkInternetWorkingOrNot
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_checkInternetWorkingOrNot
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: checkInternetWorkingOrNot
+      - action: utter_checkInternetWorkingOrNot
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# chossing connectivity and category of connectivity_6
+
+  - story: story_1_choosing_checkInternetQualityAndSpeed
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: checkInternetQualityAndSpeed
+      - action: utter_checkInternetQualityAndSpeed
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_checkInternetQualityAndSpeed
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: checkInternetQualityAndSpeed
+      - action: utter_checkInternetQualityAndSpeed
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_checkInternetQualityAndSpeed
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_checkInternetQualityAndSpeed
+    steps:
+      - intent: connectivity
+      - action: action_subcategory_of_connectivity_issues
+      - intent: checkInternetQualityAndSpeed
+      - action: utter_checkInternetQualityAndSpeed
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+ #choose software and category of choose_1
+
+  - story: story_1_choosing_ciscoWebexMeetingsInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: ciscoWebexMeetingsInstallation
+      - action: utter_ciscoWebexMeetingsInstallation
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_ciscoWebexMeetingsInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: ciscoWebexMeetingsInstallation
+      - action: utter_ciscoWebexMeetingsInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_ciscoWebexMeetingsInstallation
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_ciscoWebexMeetingsInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: ciscoWebexMeetingsInstallation
+      - action: utter_ciscoWebexMeetingsInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  # choose software and category of choose_2
+  - story: story_1_choosing_googleChromeInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: googleChromeInstallation
+      - action: utter_googleChromeInstallation
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_googleChromeInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: googleChromeInstallation
+      - action: utter_googleChromeInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_GoogleChromeInstallation
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_googleChromeInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: googleChromeInstallation
+      - action: utter_googleChromeInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  #choose software and category of choose_3
+  - story: story_1_choosing_adobeReaderInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: adobeReaderInstallation
+      - action: utter_adobeReaderInstallation
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_adobeReaderInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: adobeReaderInstallation
+      - action: utter_adobeReaderInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_adobeReaderInstallation
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_adobeReaderInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: adobeReaderInstallation
+      - action: utter_adobeReaderInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+  # choose software and category of choose_4
+  - story: story_1_choosing_winRARInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: winRARInstallation
+      - action: utter_winRARInstallation
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_winRARInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: winRARInstallation
+      - action: utter_winRARInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_WinRARInstallation
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_winRARInstallation
+    steps:
+      - intent: software
+      - action: action_subcategory_of_software_install_issues
+      - intent: winRARInstallation
+      - action: utter_winRARInstallation
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose  microsoft office  and category of microsoft office_1
+
+  - story: story_1_choosing_speedUpMicrosoftPowerpoint
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: speedUpMicrosoftPowerpoint
+      - action: utter_speedUpMicrosoftPowerpoint
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_speedUpMicrosoftPowerpoint
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: speedUpMicrosoftPowerpoint
+      - action: utter_speedUpMicrosoftPowerpoint
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_speedUpMicrosoftPowerpoint
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_speedUpMicrosoftPowerpoint
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: speedUpMicrosoftPowerpoint
+      - action: utter_speedUpMicrosoftPowerpoint
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose  microsoft office  and category of microsoft office_2
+
+
+  - story: story_1_choosing_officeQuickRepair
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: officeQuickRepair
+      - action: utter_officeQuickRepair
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_officeQuickRepair
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: officeQuickRepair
+      - action: utter_officeQuickRepair
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_officeQuickRepair
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_officeQuickRepair
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: officeQuickRepair
+      - action: utter_officeQuickRepair
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose  microsoft office  and category of microsoft office_3
+
+  - story: story_1_choosing_excelFilesNotOpening
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: excelFilesNotOpening
+      - action: utter_excelFilesNotOpening
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_facing_excelFilesNotOpening
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: excelFilesNotOpening
+      - action: utter_excelFilesNotOpening
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_speedUpMicrosoftPowerpoint
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_facing_excelFilesNotOpening
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: excelFilesNotOpening
+      - action: utter_excelFilesNotOpening
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose  microsoft office  and category of microsoft office_4
+
+  - story: story_1_choosing_excelRandomCrashIssues
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: excelRandomCrashIssues
+      - action: utter_excelRandomCrashIssues
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_excelRandomCrashIssues
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: excelRandomCrashIssues
+      - action: utter_excelRandomCrashIssues
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_excelRandomCrashIssues
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_excelRandomCrashIssues
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: excelRandomCrashIssues
+      - action: utter_excelRandomCrashIssues
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+# choose  microsoft office  and category of microsoft office_5
+
+  - story: story_1_choosing_convertWordFileIntoPdfFile
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: convertWordFileIntoPdfFile
+      - action: utter_convertWordFileIntoPdfFile
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_convertWordFileIntoPdfFile
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: convertWordFileIntoPdfFile
+      - action: utter_convertWordFileIntoPdfFile
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_convertWordFileIntoPdfFile
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_convertWordFileIntoPdfFile
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: convertWordFileIntoPdfFile
+      - action: utter_convertWordFileIntoPdfFile
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose  microsoft office  and category of microsoft office_6
+
+  - story: story_1_choosing_openExcelInSafeMode
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: openExcelInSafeMode
+      - action: utter_openExcelInSafeMode
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_openExcelInSafeMode
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: openExcelInSafeMode
+      - action: utter_openExcelInSafeMode
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_openExcelInSafeMode
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_openExcelInSafeMode
+    steps:
+      - intent: microsoftOffice
+      - action: action_subcategory_of_microsoft_issues
+      - intent: openExcelInSafeMode
+      - action: utter_openExcelInSafeMode
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+#
+#
+# choose printer and category of printer_1
+
+  - story: story_1_choosing_printerSpoolerServiceIsNotRunning
+    steps:
+      - intent: printer
+      - action: action_subcategory_of_printer_issues
+      - intent: printerSpoolerServiceIsNotRunning
+      - action: utter_printerSpoolerServiceIsNotRunning
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_printerSpoolerServiceIsNotRunning
+    steps:
+      - intent: printer
+      - action: action_subcategory_of_printer_issues
+      - intent: printerSpoolerServiceIsNotRunning
+      - action: utter_printerSpoolerServiceIsNotRunning
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_PrinterSpoolerServiceIsNotRunning
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_printerSpoolerServiceIsNotRunning
+    steps:
+      - intent: printer
+      - action: action_subcategory_of_printer_issues
+      - intent: printerSpoolerServiceIsNotRunning
+      - action: utter_printerSpoolerServiceIsNotRunning
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose ADService and category of ADService_1
+
+  - story: story_1_choosing_resetYourPasswordFromAnywhere
+    steps:
+      - intent: adSelfService
+      - action: action_subcategory_of_ad_service_issues
+      - intent: resetYourPasswordFromAnywhere
+      - action: utter_resetYourPasswordFromAnywhere
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_resetYourPasswordFromAnywhere
+    steps:
+      - intent: adSelfService
+      - action: action_subcategory_of_ad_service_issues
+      - intent: resetYourPasswordFromAnywhere
+      - action: utter_resetYourPasswordFromAnywhere
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_resetYourPasswordFromAnywhere
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_resetYourPasswordFromAnywhere
+    steps:
+      - intent: adSelfService
+      - action: action_subcategory_of_ad_service_issues
+      - intent: resetYourPasswordFromAnywhere
+      - action: utter_resetYourPasswordFromAnywhere
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose ADService and category of ADService_2
+
+  - story: story_1_choosing_enrollInADSelfServicePlusPortal
+    steps:
+      - intent: adSelfService
+      - action: action_subcategory_of_ad_service_issues
+      - intent: enrollInADSelfServicePlusPortal
+      - action: utter_enrollInADSelfServicePlusPortal
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_enrollInADSelfServicePlusPortal
+    steps:
+      - intent: adSelfService
+      - action: action_subcategory_of_ad_service_issues
+      - intent: enrollInADSelfServicePlusPortal
+      - action: utter_enrollInADSelfServicePlusPortal
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_enrollInADSelfServicePlusPortal
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_enrollInADSelfServicePlusPortal
+    steps:
+      - intent: adSelfService
+      - action: action_subcategory_of_ad_service_issues
+      - intent: enrollInADSelfServicePlusPortal
+      - action: utter_enrollInADSelfServicePlusPortal
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+# choose remote support and category of remote support_1
+
+  - story: story_1_choosing_joinRemoteSupportSession
+    steps:
+      - intent: remoteSupport
+      - action: action_subcategory_of_remote_support_issues
+      - intent: joinRemoteSupportSession
+      - action: utter_joinRemoteSupportSession_strictly
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_joinRemoteSupportSession
+    steps:
+      - intent: remoteSupport
+      - action: action_subcategory_of_remote_support_issues
+      - intent: joinRemoteSupportSession
+      - action: utter_joinRemoteSupportSession_strictly
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_joinRemoteSupportSession
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_joinRemoteSupportSession
+    steps:
+      - intent: remoteSupport
+      - action: action_subcategory_of_remote_support_issues
+      - intent: joinRemoteSupportSession
+      - action: utter_joinRemoteSupportSession_strictly
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+# choose remote support and category of remote support_2
+  - story: story_1_choosing_installRemoteSupportSoftware
+    steps:
+      - intent: remoteSupport
+      - action: action_subcategory_of_remote_support_issues
+      - intent: installRemoteSupportSoftware
+      - action: utter_installRemoteSupportSoftware
+      - action: utter_didThatHelp
+      - intent: yes
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_2_User_installRemoteSupportSoftware
+    steps:
+      - intent: remoteSupport
+      - action: action_subcategory_of_remote_support_issues
+      - intent: installRemoteSupportSoftware
+      - action: utter_installRemoteSupportSoftware
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: yes
+      - action: utter_manual_ticket_creation_to_rimcc
+      # - action: action_ticket_creation_installRemoteSupportSoftware
+      - action: utter_thanks
+      - action: action_restart
+#      - action: utter_thanks
+  - story: story_3_User_installRemoteSupportSoftware
+    steps:
+      - intent: remoteSupport
+      - action: action_subcategory_of_remote_support_issues
+      - intent: installRemoteSupportSoftware
+      - action: utter_installRemoteSupportSoftware
+      - action: utter_didThatHelp
+      - intent: no
+      - action: utter_ticket_creation
+      - intent: no
+      - action: utter_thanks
+      - action: action_restart
+
+
+
+#
+##  - story: stop form + continue
+##    steps:
+##      - intent: greet
+##      - action: utter_welcome
+##      - intent: yes
+##      - active_loop: login_form
+##      - intent: stop
+##      - action: utter_ask_continue
+##      - intent: yes
+##      - action: login_form
+##      - active_loop: null
+##      - action: utter_submit
+##      - action: utter_slots_values
+##
+##  - story: stop form + stop
+##    steps:
+##      - intent: greet
+##      - action: utter_welcome
+##      - intent: yes
+##      - active_loop: login_form
+##      - intent: stop
+##      - action: utter_ask_continue
+##      - intent: no
+##      - action: action_deactivate_loop
+##      - active_loop: null
+##

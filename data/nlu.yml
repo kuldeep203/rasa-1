@@ -1,0 +1,838 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: printerSpoolerServiceIsNotRunning
+    examples: |
+      - printerSpoolerServiceIsNotRunning
+      - unable to print
+      - printer issues
+      - spooler issue
+      - i am unable to print
+      - printer not working
+      - i am not able to print
+      - unable to print document
+      - printer is giving an erroe
+      - experienceing printer issue
+      - not able to print
+      - Printer problem
+      - printer installation
+      - printing problem
+      - Printing issue
+      - Cartridge
+      - Store Printer not working
+      - common printer installation
+      - printer scanner open not working.
+      - Printer not working
+      - printer connect
+      - Time Office Printer not working
+      - Printer retard roller issue
+      - Unable to print
+      - document printing issue
+      - printer error
+      - Printer IP conflict
+      - Thermal printer not working
+      - Printing Error
+      - Printer not working in account office
+      - Remote Print Facility
+      - Printer Cartridge requirment
+      - document printing problem in printer
+      - Connect the printer to my Laptop
+      - barcode printer printing issue
+      - Printer issue
+      - Unable to do print and system slow
+      - printer is not working properly , please replace
+      - first page only. color print out please
+      - Printer reset
+      - Printer scanner not working
+      - HR Printer Problem
+      - document photocopy issue in printer
+      - printing not available with samsung printer with sales systems
+      - Addition of printer
+      - Printer paper jammed
+      - printer issue ccr
+      - Connecting Printer and Wifi simultaneously
+      - Facing Problems in Printer
+      - Printer parts broken
+      - unable to take print out
+      - Regarding Process Department Printer Issue
+      - DCBL-Notice
+      - Shipment printer installation
+      - CARTRIDGE NOT INSTALL
+      - Store common Printer installation
+      - printer install
+      - STORE PRINTER NOT WORKING PROPERLY
+      - Cartridge of printer in basic maintenance.
+      - CCR Printer Problem.
+      - printer is not working properly
+      - Regarding Printing issue
+      - Old Printer not in good conditions to use
+      - Barcode printer
+      - Printer Cartridges
+      - Problems in Printers
+      - Printing problem by my pc
+      - Printer issue at Mine's weighbridge
+      - Cartridge replacement
+      - Printer is not taking the paper from the lower tray.
+      - Unable to install personal printer at home
+      - Process department Printer
+      - Printer display issue.
+      - Printout and scanning issue
+      - Printer installation in laptop.
+      - Epson Printer Not working
+      - Printer Issue(HR Office)
+      - Scan problem in store printers
+      - GATE in Gate out Problem |Alsthom
+      - blank page coming out printer kindly resolve the issue
+      - Printer Issue(HR Office,Lanka)
+      - Printer not working properly in patna office
+      - printer is not working properly , please checking
+      - Incomplete copying images in samsung printer
+      - Printer Issue & Our Destop Hardware Problem
+      - Replacement of black cartridge for Konica printer
+      - Distillery printer is not working.
+      - Invoice printer not working
+      - paper pickup issue
+      - Printing problem in samsung printer
+      - Printer Service
+      - Printer issue at residence
+      - Print & Scan through VPN not working
+      - Printer installation requirement
+      - Please install Printer
+      - Installation of Printer with Mr. Pankaj Rastogi's Laptop
+      - Add printer to my system
+      - Unable to take print - Shyamlal Sahoo
+      - Store Department Printer not work
+      - Unable to take print outs from office - 7th floor
+
+  - intent: diskCleanup
+    examples: |
+      - cleanup my disk
+      - clean my disk up
+      - want my disk to be cleaned
+      - free up space on my disk
+      - clean space on disk
+      - disk cleanup
+      - want to clean my disk
+      - disk space issue
+      - my disk needs to be cleaned up
+      - clean disk 
+      - disk need to be clean 
+      - clean
+      
+
+  - intent: yes
+    examples: |
+      - sure
+      - correct
+      - ye
+      - uh yes
+      - let's do it
+      - yeah
+      - um yes
+      - yes knocking
+      - that's correct
+      - yes yes
+      - right
+      - yea
+      - yes
+      - yes right
+      - yes and i dont care
+      - right on
+      - i love that
+      - ok
+  - intent: no
+    examples: |
+      - no
+      - nah
+      - no thanks
+      - no thank you
+      - uh no
+      - negative
+      - no this does not work for me
+      - not at all
+      - not required
+      - not needed
+      - forget it
+      - nevermind
+      - it didnt
+      - it did not
+
+  - intent: help
+    examples: |
+      - Help
+      - I want help
+      - Please help
+
+  - intent: stop
+    examples: |
+      - ok then you cant help me
+      - that was shit, you're not helping
+      - you can't help me
+      - you can't help me with what i need
+      - i guess you can't help me then
+      - ok i guess you can't help me
+      - that's not what i want
+      - ok, but that doesnt help me
+      - this is leading to nothing
+      - this conversation is not really helpful
+      - you cannot help me with what I want
+      - I think you cant help me
+      - hm i don't think you can do what i want
+      - stop
+      - stop go back
+      - do you get anything?
+      - and you call yourself bot company? pff
+      - and that's it?
+      - nothing else?
+
+
+  - intent: speedUpMachine
+    examples: |
+      - speed up my machine
+      - Need to speed up my machine
+      - can you make my machine faster
+      - Please speeed up my machine
+      - speedUpMachine
+      - my machine slow
+      - machine slow
+      - macine slow
+      - speed machine 
+      - slow machine
+
+
+
+
+  - intent: oracleNotWorking
+    examples: |
+      - Oracle not working 
+      - oracle is not working properly
+      - i have problems with oracle
+      - facing problems with oracle
+      - Issue with oracle
+      - facing issue with oracle
+      - oracleNotWorking
+      - oracle not working 
+      - oracle
+
+
+  - intent: unableToOpenFile
+    examples: |
+      - Unable to open png in window 10
+      - Unable to open png file in window 10
+      - not able to open png file in window 10
+      - png file is not opening in window 10
+      - help me to open png file in window 10
+      - how to open png file in window 10
+      - unableToOpenPngFileInWindow10
+      - unableToOpenJpgFileInWindow10
+      - unableToOpenPdfFileInWindow10
+      - Unable to open png, jpg and PDF file in window 10
+      - Unable to open JPG in window 10
+      - Unable to open JPG file in window 10
+      - not able to open JPG file in window 10
+      - JPG file is not opening in window 10
+      - help me to open JPG file in window 10
+      - how to open JPG file in window 10
+      - Unable to open PDF in window 10
+      - Unable to open PDF file in window 10
+      - not able to open PDF file in window 10
+      - pdf file is not opening in window 10
+      - help me to open pdf file in window 10
+      - how to open pdf file in window 10
+      - unableToOpenFile
+      - unable To Open File
+
+  - intent: setTimeZoneToIndiaStandardTime
+    examples: |
+      - Set time Zone to india standard time 
+      - india standard time 
+      - set time to indian standard time
+      - set time to ist
+      - i want to set the time to india standard time
+      - can you make my time to indian standard time zone
+      - i want my time zone to indian standard time zone
+      - setTimeZoneToIndiaStandardTime
+      - set time to ist 
+      - time setting
+
+  - intent: resolveBlueDumpError
+    examples: |
+      - Resolve blue dump error
+      - blue dump error
+      - facing blue dump error 
+      - solve blue dump error
+      - blue dump error
+      - how to get rid of blue dump error
+      - resolveBlueDumpError 
+      - dump error
+      - resolve Blue Dump Error
+
+  - intent: javaupdate
+    examples: |
+      - Enable/Disbale JAVA auto update
+      - enable java update
+      - disable java update
+      - i want to disable java update
+      - i want to enable java update
+      - please enable java update
+      - please disable java update
+      - DisableJAVAAutoUpdate
+      - EnableDisableJAVAAutoUpdate
+      - Disable JAVA Auto Update
+      - update java
+      - Enable Disable JAVA Auto Update
+      - java
+    
+    
+
+  - intent: windowIssueDueToUpdate
+    examples: |
+      - Window Issue due to update
+      - getting window updating problem
+      - facing window update issue
+      - i want to resolve issue due to window update
+      - windowIssueDueToUpdate
+      - resolve my issue due to window update
+      - window update issue
+      - window update 
+      - window issue
+
+
+  - intent: antiVirusIsNotWorking
+    examples: |
+      - Anti virus is not working
+      - anti virus stop working
+      - issue related to anti-virus
+      - issue related to anti virus
+      - please check what going on with anti virus
+      - antiVirusIsNotWorking
+      - Restart critical services related to Anti-Virus
+      - restartCriticalServicesRelatedToAnti-Virus
+      - restartCriticalServicesRelatedToAntiVirus
+      - restart Critical Services Related To Anti Virus
+      - service related to anti virus
+
+  - intent: remoteDesktopConnectionTroubleShooter
+    examples: |
+      - Remote desktop connection troubleshooter 
+      - remote desktop connection problems
+      - facing issue with remote desktop connection
+      - facing problems with remote desktop
+      - not able to work on remote desktop
+      - unable to work on remote desktop
+      - remoteDesktopConnectionTroubleShooter
+      - remote desktop connection 
+      - remote connection troubleShooter
+
+
+  - intent: backUpUserData
+    examples: |
+      - Back up user data
+      - i want to backup my data
+      - backup my data
+      - i want to restore my data
+      - backUpUserData
+      - backup data
+
+  - intent: freeUpDiskSpace
+    examples: |
+      - Free up disk space
+      - i want to Free up disk space
+      - Free up disk space
+      - freeUpDiskSpace
+      - Disk space
+      - free space
+    
+
+  - intent: updateGroupPolicy
+    examples: |
+      - Please update group policy 
+      - i want to update group policy
+      - Group policy need to be updated
+      - updateGroupPolicy
+      - update group policy 
+      - group policy
+      
+
+  - intent: sharedFolderForMapping
+    examples: |
+      - Shared folder for mapping 
+      - i want to Shared folder for mapping
+      - Shared folder for mapping needs to be done
+      - sharedFolderForMapping
+      - shared folder
+      - folder mapping
+  
+
+  - intent: system
+    examples: |
+      - my problems is related to system
+      - system
+      - i have some issues with system
+      - please resolve my system issues
+      - issue relates to system
+      - sys
+      - laptop
+      - computer
+      - pc
+
+
+  - intent: microsoftOffice
+    examples: |
+      - my problems is related to Microsoft Office
+      - Microsoft Office
+      - i have some issues with Microsoft Office
+      - please resolve my Microsoft Office issues
+      - Please resolve my issue related to Microsoft Office
+      - microsoftOffice
+      - ms
+      - microsoft Office
+      
+
+  - intent: browser
+    examples: |
+      - my problems is related to Browser
+      - i have some issues with Browser
+      - please resolve my Browser issues
+      - Browser
+      - bruser
+      - brow
+
+
+  - intent: software
+    examples: |
+      - my problems is related to software
+      - i have some issues with software
+      - please resolve my software issues
+      - software
+      
+  - intent: outlook
+    examples: |
+      - my problems is related to outlook
+      - i have some issues with outlook
+      - please resolve my  outlook
+      - outlook
+
+  - intent: connectivity
+    examples: |
+      - my problems is related to connectivity
+      - i have some issues with connectivity
+      - please resolve my connectivity problems
+      - connectivity
+      - Connectivity
+      - connection 
+      - connection is breaking
+
+  - intent: adSelfService
+    examples: |
+      - my problems is related to AdSelfService
+      - i have some issues with AdSelfService
+      - please resolve my  AdSelfService
+      - AdSelfService
+      - adSelfService
+      - ad service
+      - active directory service
+
+  
+
+  - intent: remoteSupport
+    examples: |
+      - my problems is related to  remote support
+      - i have some issues with remote support
+      - please resolve my remote support problems
+      - remoteSupport
+      - support for remote
+      - remote support
+      - remote
+      
+
+  - intent: printer
+    examples: |
+      - my problems is related to Printer
+      - please resolve my Printer problems
+      - Printer
+      - printer
+      - PRINTER
+      - pinter
+
+      
+
+# intent for sub cat of outlook
+
+  - intent: outlookIsNotConnecting
+    examples: |
+      - outlookIsNotConnecting
+      - outlook Is Not Connecting
+      - Problems with outlook connection 
+      - not able to connect the outlook
+      - have problems with outlook
+      - outlook connection 
+      - outlook connection problems
+      - not able to establish outlook connection
+      
+
+  - intent: createNewPSTArchiveFile
+    examples: |
+      - createNewPSTArchiveFile
+      - Create New PST Archive File
+      - Please create new PST archive file
+      - PST Archive File
+      - Archive File
+      - personal storage table archive file
+      - personal storage table
+      - PST
+      
+
+  - intent: configureOutlook
+    examples: |
+      - configureOutlook
+      - configure Outlook
+      - Please configureOutlook
+      - i want to configure Outlook
+      - I need to configure Outlook
+      - configuration of outlook
+      - outlook configuration
+      
+
+  - intent: knowYourPSTFileSize
+    examples: |
+      - knowYourPSTFileSize
+      - know Your PST File Size
+      - i wan to know PST File Size
+      - i want to know Your PSTFile Size
+      - size of pst file 
+      - space of PST file size
+      - size of personal storage table
+      - pst file size
+      - size of pst file
+      
+      
+
+  - intent: openWebmail
+    examples: |
+      - openWebmail
+      - Open Web mail
+      - Open Web-mail
+      - i want to openWebmail
+      - i want to open Web mail
+      - open mail web
+      - webmail
+      - mailweb
+
+
+#action_subcategory_of_browser_issues
+
+  - intent: unableToOpenPDFInIE
+    examples: |
+      - unableToOpenPDFInIE
+      - unable To Open PDF In IE
+      - not able to To open PDF in IE
+      - Problems with To open PDF in IE
+      - Solve problems  To open PDF in IE
+      - file is not opening in IE
+      - file in IE
+
+  - intent: makeChromeYourDefaultBrowser
+    examples: |
+      - makeChromeYourDefaultBrowser
+      - Make my Chrome Default Browser
+      - Make Chrome Default Browser
+      - Chrome Default Browser
+      - Make Chrome your default browser
+      - i want to make Chrome Default Browser
+      - chrome 
+      - Default Browser chrome
+  
+
+  - intent: setInternetExplorerDefaultBrowser
+    examples: |
+      - setInternetExplorerDefaultBrowser
+      - set Internet Explorer Default Browser
+      - Internet Explorer Default Browser
+      - Default Browser need to Internet Explorer
+      - Make Internet Explorer Default Browser
+      - Default Browser  Internet Explorer
+
+  - intent: makeEdgeYourDefaultBrowser
+    examples: |
+      - makeEdgeYourDefaultBrowser
+      - Make edge your default browser
+      - Edge your default browser
+      - Make edge browser default
+      - Edge browser need to be default 
+      - edge browser
+      - Edge browser
+      
+# intent for connectivity
+
+  - intent: lanNotWorking
+    examples: |
+      - lanNotWorking
+      - my lan is not working
+      - lan is not working
+      - lan stop working properly
+      - Do something when lan stop works
+      - lan 
+      - local area network
+      - lan is not connecting
+
+
+  - intent: unableToConnectToWi-Fi
+    examples: |
+      - my wifi is not would
+      - wifi is not connecting
+      - wifi problem
+      - issue with wifi
+      - wifi error
+      - wifi not connecting
+      - wifi is not working
+      - fix my wifi
+      - wifi is not connecting to network
+      - network issue
+      - unable to open internet
+      - Wi-Fi
+      - wireless internet problems
+
+  - intent: modifyTheHostsFileOnYourMachine
+    examples: |
+      - modifyTheHostsFileOnYourMachine
+      - modify The Hosts File On Your Machine
+      - Modify Hosts File On my Machine
+      - Modify host file on machine
+      - Can you modify the host file
+      - i want to modify The Hosts File On my Machine
+      - host file on machine
+      - modify host file on my machine
+
+  - intent: internetLANLimitedIssue
+    examples: |
+      - internetLANLimitedIssue
+      - internet LAN Limited Issue
+      - lan internet limited issue
+      - Issue related to lan internet
+      - limited lan internet
+      - internet issue on lan
+      - no internet on lan 
+      - no internet on local area network
+
+  - intent: checkInternetWorkingOrNot
+    examples: |
+      - checkInternetWorkingOrNot
+      - check Internet Working Or Not
+      - is internet working
+      - check my internet working or not
+      - check your internet working or not
+      - Internet Working Or Not
+      - is internet working
+
+  - intent: checkInternetQualityAndSpeed
+    examples: |
+      - checkInternetQualityAndSpeed
+      - internet quality 
+      - internet speed
+      - check Internet Quality And Speed
+      - InternetQualityAndSpeed
+      - Tell me my internet speed and internet
+      - internet quality and speed
+      - internet 
+
+#intent for software
+
+  - intent: ciscoWebexMeetingsInstallation
+    examples: |
+      - ciscoWebexMeetingsInstallation
+      - cisco Webex Meetings Installation
+      - i want to install cisco Webex Meetings
+      - install cisco Webex Meetings
+      - cisco Webex Meetings Installation
+      - cisco Webex Meetings
+      - cisco Webex
+      - Webex
+
+  - intent: googleChromeInstallation
+    examples: |
+      - google Chrome Installation
+      - install google chrome
+      - i want to install chrome
+      - Please install chrome
+      - Setup chrome on my laptop
+      - googleChromeInstallation
+      - chrome install
+      - install chrome 
+      - chrome setup om my machine
+      - chrome setup
+
+  - intent: adobeReaderInstallation
+    examples: |
+      - adobe Reader Installation
+      - install adobe Reader
+      - i want to adobe Reader
+      - Please install adobe Reader
+      - Setup adobe Reader  on my laptop
+      - adobeReaderInstallation
+      - adobe Reader
+      - install adobe Reader
+      - setup adobe reader
+
+  - intent: winRARInstallation
+    examples: |
+      - winRARInstallation
+      - win RAR Installation
+      - I want to install win RAR
+      - setup win rar installation
+      - Please setup win RAR
+      - install winrar
+      - winRAR
+      
+
+# intent for microsoft issue
+
+  - intent: speedUpMicrosoftPowerpoint
+    examples: |
+      - powerpoint is slow
+      - ms powerpoint is slow
+      - facing issue with powerpoint
+      - powerpoint is lagging
+      - lag with powerpoint
+      - speed Up Microsoft Powerpoint
+      - speedUpMicrosoftPowerpoint
+      - powerpoint
+
+  - intent: officeQuickRepair
+    examples: |
+      - officeQuickRepair
+      - Office Quick Repair
+      - Repair office
+      - Please repair office
+      - i need quick office repair
+      - office repair
+
+  - intent: excelFilesNotOpening
+    examples: |
+      - excelFilesNotOpening
+      - excel Files Not Opening
+      - Not able to open excel
+      - Excel is not opening
+      - Please open excel
+      - open excel
+      - open microsoft excel file
+      - excel file 
+
+  - intent: excelRandomCrashIssues
+    examples: |
+      - excelRandomCrashIssues
+      - excel Random Crash Issues
+      - Excel crash issue
+      - Excel is crashing
+      - excel Random Crash Issues
+      - excel crash
+      - excel is crashing
+
+  - intent: convertWordFileIntoPdfFile
+    examples: |
+      - convert Word File Into Pdf File
+      - Word File Into Pdf File
+      - Word File to Pdf File
+      - Please convert convert Word File Into Pdf File
+      - Word to pdf file
+      - convertWordFileIntoPdfFile 
+      - convert word file
+
+  - intent: openExcelInSafeMode
+    examples: |
+      - openExcelInSafeMode
+      - open Excel In Safe Mode
+      - ExcelInSafeMode
+      - Excel In Safe Mode
+      - I want to open excel in safe mode
+      - excel security
+
+# intent for AD service
+
+  - intent: resetYourPasswordFromAnywhere
+    examples: |
+      - resetYourPasswordFromAnywhere
+      - reset Your Password From Anywhere
+      - Reset Your AD Password From Anywhere
+      - Reset my AD Password
+      - Reset AD Password
+      - reset active directory password
+      - reset password
+
+  - intent: enrollInADSelfServicePlusPortal
+    examples: |
+      - enrollInADSelfServicePlusPortal
+      - enroll In AD Self Service Plus Portal
+      - Please enroll In AD Self Service Plus Portal
+      - AD Self Service Plus Portal
+      - i want to enrol in AD Self Service Plus Portal
+      - AD Self Service Plus Portal
+      - AD portal
+
+# intent for remote support
+
+  - intent: joinRemoteSupportSession
+    examples: |
+      - joinRemoteSupportSession
+      - join Remote Support Session
+      - Please join Remote Support Session
+      - Remote Support session 
+      - I want help for Remote Support session 
+
+  - intent: installRemoteSupportSoftware
+    examples: |
+      - installRemoteSupportSoftware
+      - install Remote Support Software
+      - Please install Remote Support Software
+      - I want to install remote software
+      - remote software install
+      - software install
+      - remote support software
+
+  - intent: mainmenu
+    examples: |
+      - mainmenu
+      - i want main menu 
+      - return to main menu
+      - Main menu
+      - Home
+      - I want to return to home
+      - i want to get back to home
+      - Home
+      - home

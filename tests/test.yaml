@@ -1,0 +1,460 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: false
+intents:
+  - yes
+  - no
+  - askLeaveBalance
+  - askLeaveTypes
+  - whereToApplyLeaves
+  - howToApplyLeaves
+  - showLeavePolicy
+  - chromeSlowness
+  - slowExcel
+  - printerIssue
+  - chromeDefault
+  - diskCleanup
+  - slowMachine
+  - wifiIssue
+  - out_of_scope
+  - slowPowerpoint
+  - slowWord
+  - greet
+  - goodbye
+  - bot_challenge
+  - stop
+
+
+  - speedUpMachine
+  - oracleNotWorking
+  - unableToOpenPngJpgPdfFileInWindow10
+  - setTimeZoneToIndiaStandardTime
+  - resolveBlueDumpError
+  - EnableDisableJAVAAutoUpdate
+  - windowIssueDueToUpdate
+  - antiVirusIsNotWorking
+  - remoteDesktopConnectionTroubleShooter
+  - backUpUserData
+  - freeUpDiskSpace
+  - updateGroupPolicy
+  - sharedFolderForMapping
+
+  - system
+  - Microsoft Office
+  - Browser
+  - software
+  - outlook
+  - AdSelfService
+  - softwareInstallation
+  - remoteSupport
+  - Printer
+  - outlookIsNotConnecting
+  - createNewPSTArchiveFile
+  - configureOutlook
+  - knowYourPSTFileSize
+  - openWebmail
+
+
+responses:
+  utter_ask_rephrase:
+    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_LeavePolicy:
+    - attachment:
+        payload:
+          url: https://www.usf.edu/hr/benefits/attendance-leave/al-policies-and-procedures-for-employees-113018.pdf
+        type: pdf_attachment
+      text: Please find it here
+
+
+
+  utter_askLeaveBalance:
+    - custom:
+        data:
+          backgroundColor:
+            - '#3fd2eb'
+            - '#afff56'
+            - '#bfaf84'
+            - '#0f6a88'
+            - '#cf7850'
+          chartType: pie
+          chartsData:
+            - 5
+            - 10
+            - 22
+            - 3
+          displayLegend: Yes
+          labels:
+            - Sick Leave
+            - Casual Leave
+            - Earned Leave
+            - Flexi Leave
+          title: Leaves
+        payload: chart
+      text: Here is your leave balance details
+  utter_askLeaveTypes:
+    - custom:
+        data:
+          - description: Sick leave is time off from work that workers can use to stay
+              home to address their health and safety needs without losing pay.
+            title: Sick Leave
+          - description: 'Earned Leaves are the leaves which are earned in the previous
+          year and enjoyed in the preceding years. '
+            title: Earned Leave
+          - description: Casual Leave are granted for certain unforeseen situation or
+              were you are require to go for one or two days leaves to attend to personal
+              matters and not for vacation.
+            title: Casual Leave
+          - description: Flexi leave is an optional leave which one can apply directly
+              in system at lease a week before.
+            title: Flexi Leave
+        payload: collapsible
+      text: You can apply for below leaves
+  utter_chromeDefault:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport513.exe"
+        download="fix.exe" target="_blank">Make Chrome as Default fix</a>
+  utter_chromeSlowness:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport216.exe"
+        download="fix.exe" target="_blank">Download the Chrome Slowness fix</a>
+
+
+  utter_thanks:
+    - text: Thank you! Happy to help you!
+  utter_ticket_creation:
+    - buttons:
+        - payload: /yes
+          title: Yes
+        - payload: /no
+          title: No
+
+      text: I am sorry to hear that.May I create a ticket for you ?
+
+  utter_wifiIssue:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport183.exe"
+        download="fix.exe" target="_blank">Download the wifi issue fix</a>
+
+  utter_didnt_understand:
+    - text: I didnt quite understand what you are looking for.Can you please rephrase.
+
+  utter_out_of_scope:
+    - text: Sorry, I am still learning to process that.
+
+  utter_didThatHelp:
+    - buttons:
+        - payload: /yes
+          title: Yes
+        - payload: /no
+          title: No
+      text: Did that help ?
+
+  utter_msoffice:
+    - buttons:
+        - payload: /slowExcel
+          title: MS Excel
+        - payload: /slowPowerpoint
+          title: MS Powerpont
+        - payload: /slowWord
+          title: MS WOrd
+      text: I understand that you have issues with MS-Office.Can you please select which one of the MS-Office software you are facing the issue with ?
+
+  utter_goodbye:
+    - text: Goodbye
+
+  utter_iamabot:
+    - text: I am a bot
+
+  utter_slowPowerpoint:
+    - text: slow power print
+
+  utter_slowWord:
+    - text: Slow word
+
+  utter_selfHelp_slowPowerpoint:
+    - text: utter_selfHelp_slowPowerpoint
+
+  utter_selfHelp_slowWord:
+    - text: utter_selfHelp_slowWord
+
+
+
+  utter_ask_username:
+    - text: What is your username.
+
+  utter_ask_password:
+    - text: What is your password.
+
+  utter_submit:
+    - text: All done.
+
+  utter_welcome:
+    - text: Welcome before procedding we need to verify you so would to like to give proceed.
+
+  utter_speedUpMachine:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport905.exe"
+        download="fix.exe" target="_blank">Download the speed up machine fix</a>
+
+  utter_oracleNotWorking:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport216.exe"
+        download="fix.exe" target="_blank">oracle is not working</a>
+
+  utter_fileIsNotOpening:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport173.exe"
+        download="fix.exe" target="_blank">not able to open jpg,png</a>
+
+
+  utter_setTimeToIST:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport511.exe"
+        download="fix.exe" target="_blank">set time to IST</a>
+
+  utter_blueDumpError:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport928.exe"
+        download="fix.exe" target="_blank">Reolve blue dump error</a>
+
+  utter_javaUpdate:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport937.exe"
+        download="fix.exe" target="_blank">Java update</a>
+
+
+  utter_windowUpdateIssue:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport934.exe"
+        download="fix.exe" target="_blank">Window update issue</a>
+
+
+  utter_anti_virus_not_working:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport1801.exe"
+        download="fix.exe" target="_blank">Restart critical services related to Anti-Virus</a>
+
+
+  utter_freeUpDiskSpace:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport1040.exe"
+        download="fix.exe" target="_blank">Free up disk space</a>
+
+  utter_updateGroupPolicy:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport1044.exe"
+        download="fix.exe" target="_blank">Update group policy</a>
+
+  utter_sharedFolderForMapping:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport1148.exe"
+        download="fix.exe" target="_blank">shared Folder For Mapping</a>
+
+  utter_remote_connection_troubleshootter:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport930.exe"
+        download="fix.exe" target="_blank">Remote connection troubleshooter</a>
+
+
+  utter_back_up_user_data:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/tcpl/techselfsupport911.exe"
+        download="fix.exe" target="_blank">Backup user data</a>
+
+# outlook utter
+  utter_outlookIsNotConnecting:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport13.exe"
+        download="fix.exe" target="_blank">Outlook is not connecting</a>
+
+
+  utter_createNewPSTArchiveFile:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport15.exe"
+        download="fix.exe" target="_blank">Create a new PST (Archive) Fil</a>
+
+
+  utter_configureOutlook:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport32.exe"
+        download="fix.exe" target="_blank">Configure Outlook</a>
+
+
+  utter_knowYourPSTFileSize:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1122.exe"
+        download="fix.exe" target="_blank">Know your PST file size</a>
+
+
+  utter_openWebmail:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1802.exe"
+        download="fix.exe" target="_blank">Open Webmail</a>
+
+
+# broser utter
+
+
+  utter_unableToOpenPDFInIE:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport28.exe"
+        download="fix.exe" target="_blank">Unable to open PDF in IE</a>
+
+
+  utter_makeChromeYourDefaultBrowser:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport513.exe"
+        download="fix.exe" target="_blank">Make Chrome your default browser</a>
+
+
+  utter_setInternetExplorerDefaultBrowser:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport522.exe"
+        download="fix.exe" target="_blank">Set Internet Explorer as default browser</a>
+
+
+  utter_makeEdgeYourDefaultBrowser:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1804.exe"
+        download="fix.exe" target="_blank">Make Edge your default browser</a>
+
+
+#action_subcategory_of_connectivity_issues
+
+
+  utter_lanNotWorking:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport165.exe"
+        download="fix.exe" target="_blank">Lan not working</a>
+
+
+  utter_unableToConnectToWi-Fi:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport183.exe"
+        download="fix.exe" target="_blank">Unable to connect to Wi-FI</a>
+
+
+  utter_modifyTheHostsFileOnYourMachine:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport197.exe"
+        download="fix.exe" target="_blank">Modify the hosts file on your machine</a>
+
+
+  utter_internetLANLimitedIssue:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport588.exe"
+        download="fix.exe" target="_blank">Internet/ LAN limited issue</a>
+
+
+  utter_checkInternetWorkingOrNot:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport702.exe"
+        download="fix.exe" target="_blank">Check Internet working or not</a>
+
+
+  utter_checkInternetQualityAndSpeed:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1216.exe"
+        download="fix.exe" target="_blank">Check internet quality and speed</a>
+
+
+
+#action_subcategory_of_printer_issues
+
+  utter_printerSpoolerServiceIsNotRunning:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport134.exe"
+        download="fix.exe" target="_blank">Getting error Printer Spooler Service is not running</a>
+
+#action_subcategory_of_ad_service_issues
+
+  utter_resetYourPasswordFromAnywhere:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1041.exe"
+        download="fix.exe" target="_blank">Reset your password from anywhere</a>
+
+
+  utter_enrollInADSelfServicePlusPortal:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1803.exe"
+        download="fix.exe" target="_blank">Enroll in ADSelfService Plus portal</a>
+
+
+#action_subcategory_of_software_install_issues
+
+  utter_ciscoWebexMeetingsInstallation:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1047.exe"
+        download="fix.exe" target="_blank">Cisco Webex Meetings Installation</a>
+
+
+  utter_googleChromeInstallation:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1076.exe"
+        download="fix.exe" target="_blank">Google chrome Installation</a>
+
+
+  utter_adobeReaderInstallation:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1571.exe"
+        download="fix.exe" target="_blank">Adobe Reader Installation</a>
+
+
+  utter_winRARInstallation:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1800.exe"
+        download="fix.exe" target="_blank">WinRAR Installation</a>
+
+
+#action_subcategory_of_remote_support_issues
+
+  utter_joinRemoteSupportSession:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1805.exe"
+        download="fix.exe" target="_blank">Join Remote Support Session</a>
+
+  utter_installRemoteSupportSoftware:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport1806.exe"
+        download="fix.exe" target="_blank">Install Remote Support software</a>
+
+
+
+#action_subcategory_of_microsoft_issues
+
+  utter_speedUpMicrosoftPowerpoint:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport53.exe"
+        download="fix.exe" target="_blank">Speed up Microsoft Powerpoint</a>
+
+
+  utter_officeQuickRepair:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport503.exe"
+        download="fix.exe" target="_blank">Office Quick Repair</a>
+
+
+  utter_excelFilesNotOpening:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport518.exe"
+        download="fix.exe" target="_blank">Excel files not opening</a>
+
+
+  utter_excelRandomCrashIssues:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport519.exe"
+        download="fix.exe" target="_blank">Excel random crash issues</a>
+
+
+  utter_convertWordFileIntoPdfFile:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport933.exe"
+        download="fix.exe" target="_blank">Convert word file into pdf file</a>
+
+
+  utter_openExcelInSafeMode:
+    - text: <a href="https://selfhelp.teamcomputers.com/uploads/solutions/techselfsupport936.exe"
+        download="fix.exe" target="_blank">Open Excel in safe mode</a>
+
+forms:
+  - login_form
+
+actions:
+  - action_chrome_slowness
+  - action_ticket_creation_chromeSlowness
+  - action_ticket_creation_wifiIssue
+  - action_ticket_creation_slowMachine
+  - action_ticket_creation_diskCleanup
+  - action_ticket_creation_chromeDefault
+  - action_ticket_creation_slowExcel
+  - action_ticket_creation_printerIssue
+  - action_set_slot
+  - action_greet_user
+  - action_ticket_creation
+  - action_ticket_creation_slowPowerpoint
+  - action_ticket_creation_slowWord
+  - action_welcome
+  - action_category_of_issues
+  - action_subcategory_of_system_issues
+  - action_subcategory_of_microsoft_issues
+  - action_ticket_creation_speed_up_ticket_creation
+  - action_subcategory_of_outlook_issues
+  - action_subcategory_of_browser_issues
+  - action_subcategory_of_connectivity_issues
+  - action_subcategory_of_printer_issues
+  - action_subcategory_of_ad_service_issues
+  - action_subcategory_of_software_install_issues
+  - action_subcategory_of_remote_support_issues
+  - action_ticket_creation_speed_up_ticket_creation
+  - action_ticket_creation_oracle_not_working_ticket_create
+  - action_ticket_creation_set_time_to_IST_ticket_create
+  - action_ticket_creation_resolve_bluedumperror_ticket_create
+  - action_ticket_creation_resolve_disable_java_update_ticket_create
+  - action_ticket_creation_window_update_issue_ticket_create
+  - action_ticket_creation_antivirus_not_working_ticket_create
+  - action_ticket_creation_remote_connection_trouble_shooter_ticket_create
+  - action_ticket_creation_backup_user_data_ticket_create
+  - action_ticket_creation_free_up_disk_space_ticket_create
+  - action_ticket_creation_update_group_policy_ticket_create
+  - action_ticket_creation_share_folder_for_mapping_ticket_create
+  - action_ticket_creation_anti_virus_not_working_ticket_create
+  - action_ticket_creation_unable_to_open_file_ticket_create
+#  - action_self_help_videos
+
+
+
